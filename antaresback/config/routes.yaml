@@ -1,0 +1,7 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+# Route qui sert çà LexikWT pour intercepter notre authenfication JSON
+api_login_check:
+    path: /api/v1/login
