@@ -135,7 +135,7 @@ class UserController extends AbstractController
     /**
      * Editing a given user
      * 
-     * @Route("/users/{id}/update", name="users_edit", methods={"PUT"})
+     * @Route("/users/{id}", name="users_edit", methods={"PUT"})
      */
     public function usersEditPut(
         Request $request,
@@ -207,7 +207,7 @@ class UserController extends AbstractController
     /**
      * Delete User
      * 
-     * @Route("/users/delete/{id}", name="delete_users", methods={"DELETE"})
+     * @Route("/users/{id}", name="delete_users", methods={"DELETE"})
      */
     public function deleteUsers(
         ManagerRegistry $doctrine,
